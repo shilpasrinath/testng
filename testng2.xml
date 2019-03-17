@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+<parameter name="url" value="qaclickacademy.com"/>
+  <test thread-count="5" name="Personal Loan">
+    <classes>
+      <class name="test.Day1">
+      <methods>
+      <include name="demo2"/>
+      </methods>
+      </class>
+      <class name="test.Day2"/>
+      <class name="test.Day4"/>
+    </classes>
+  </test> 
+  <test name="Car Loan">
+  <classes>
+  <class name="test.Day3">
+  <methods>
+  <exclude name="Mobile.*"/>
+  
+  </methods>
+  
+  </class>
+  </classes>
+  </test>
+</suite> <!-- Suite -->
